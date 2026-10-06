@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - BirdTrainer</title>
+        <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="BirdTrainer">
+            <span>BirdTrainer</span>
+        </a>
+        <div class="menu">
+            <a href="index.html">Beranda</a>
+            <a href="layanan.html">Layanan</a>
+            <a href="tentang.html">Tentang Kami</a>
+            <a href="kontak.html">Kontak</a>
+        </div>
+        <a href="booking.html" class="btn-booking">Booking</a>
+    </nav>
+
+    <main class="booking-page">
+        <div class="booking-box">
+            <h1>Booking Penitipan</h1>
+            <p>Isi data berikut untuk mengajukan booking di BirdTrainer.</p>
+            <form>
+                <div class="form-group"><label>Nama</label><input type="text" placeholder="Masukkan nama"></div>
+                <div class="form-group"><label>No. WhatsApp</label><input type="text" placeholder="Masukkan nomor WhatsApp"></div>
+                <div class="form-group"><label>Layanan</label>
+                    <select><option>Penitipan Harian</option><option>Penitipan Mingguan</option><option>Perawatan Khusus</option></select>
+                </div>
+                <div class="form-group"><label>Catatan</label><textarea placeholder="Tulis kebutuhan burungmu"></textarea></div>
+                <button type="submit">Kirim Booking</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

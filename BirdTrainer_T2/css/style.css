@@ -1,0 +1,1238 @@
+/* =========================================================
+
+BIRDTRAINER - ONE CSS FILE
+
+Dipakai oleh: index, layanan, tentang, kontak, booking,
+
+login, dan register.
+
+========================================================= */
+
+\* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html {
+scroll-behavior: smooth;
+overflow-x: hidden;
+}
+
+body {
+font-family: Arial,sans-serif;
+background: #f8f6ef;
+color: #26352a;
+line-height: 1.6;
+overflow-x: hidden;
+}
+
+a {
+text-decoration: none;
+color: inherit;
+}
+
+img {
+max-width: 100%;
+display: block;
+}
+
+button,input,select,textarea {
+font: inherit;
+}
+
+/* ===================== NAVBAR ===================== */
+
+.navbar {
+width: 100%;
+min-height: 90px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 20px;
+padding: 14px 8%;
+background: #f8f6ef;
+}
+
+.logo {
+display: flex;
+align-items: center;
+gap: 12px;
+font-size: 30px;
+font-weight: bold;
+color: #294832;
+white-space: nowrap;
+}
+
+.logo img {
+width: 58px;
+height: 58px;
+object-fit: contain;
+}
+
+.logo span {
+color: #294832;
+}
+
+.menu {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 28px;
+}
+
+.menu a {
+font-size: 16px;
+color: #26352a;
+transition: .2s;
+}
+
+.menu a:hover,.menu a.active {
+color: #66816b;
+}
+
+.btn-login-nav {
+color: #294832;
+border: 1px solid #294832;
+padding: 10px 18px;
+border-radius: 8px;
+white-space: nowrap;
+transition: .2s;
+}
+
+.btn-login-nav:hover {
+background: #294832;
+color: #fff;
+}
+
+.navbar>.btn-booking {
+display: inline-block;
+background: #294832;
+color: #fff;
+padding: 12px 22px;
+border-radius: 8px;
+white-space: nowrap;
+transition: .2s;
+}
+
+.navbar>.btn-booking:hover {
+background: #1f3827;
+}
+
+/* ===================== COMMON ===================== */
+
+.small-title {
+font-size: 13px;
+font-weight: bold;
+letter-spacing: 2px;
+color: #66816b;
+margin-bottom: 15px;
+}
+
+.btn-primary {
+display: inline-block;
+background: #294832;
+color: #fff;
+padding: 13px 25px;
+border-radius: 6px;
+transition: .2s;
+}
+
+.btn-primary:hover {
+background: #1f3827;
+}
+
+.section-title {
+text-align: center;
+max-width: 650px;
+margin: 0 auto 50px;
+}
+
+.section-title h2 {
+font-size: 36px;
+line-height: 1.2;
+margin-bottom: 15px;
+}
+
+.section-title>p:last-child {
+color: #6d746e;
+}
+
+/* ===================== HOME ===================== */
+
+.hero {
+min-height: 600px;
+padding: 70px 8%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 60px;
+}
+
+.hero-text {
+width: 50%;
+}
+
+.hero h1 {
+font-size: 55px;
+line-height: 1.15;
+margin-bottom: 25px;
+}
+
+.hero h1 span {
+color: #6b8b70;
+}
+
+.hero .description {
+max-width: 500px;
+color: #687069;
+margin-bottom: 30px;
+}
+
+.hero-button {
+display: flex;
+gap: 15px;
+flex-wrap: wrap;
+}
+
+.btn-secondary {
+display: inline-block;
+border: 1px solid #294832;
+color: #294832;
+padding: 12px 25px;
+border-radius: 6px;
+}
+
+.btn-secondary:hover {
+background: #294832;
+color: #fff;
+}
+
+.hero-image {
+width: 45%;
+height: 430px;
+}
+
+.hero-image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 15px;
+}
+
+.services {
+padding: 90px 8%;
+background: #fff;
+}
+
+.service-container {
+display: flex;
+gap: 25px;
+}
+
+.service-card {
+flex: 1;
+padding: 30px;
+border: 1px solid #e1e4de;
+border-radius: 10px;
+background: #fafbf8;
+}
+
+.service-number {
+font-size: 14px;
+color: #78917b;
+margin-bottom: 35px;
+}
+
+.service-card h3 {
+font-size: 21px;
+margin-bottom: 12px;
+}
+
+.service-card p {
+color: #6d746e;
+margin-bottom: 25px;
+}
+
+.service-card>a {
+font-size: 14px;
+font-weight: bold;
+color: #294832;
+}
+
+.advantages {
+padding: 100px 8%;
+display: flex;
+align-items: center;
+gap: 80px;
+}
+
+.advantage-image {
+width: 48%;
+height: 500px;
+}
+
+.advantage-image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 15px;
+}
+
+.advantage-text {
+width: 52%;
+}
+
+.advantage-text h2 {
+font-size: 38px;
+line-height: 1.2;
+margin-bottom: 20px;
+}
+
+.advantage-text>p {
+color: #6d746e;
+margin-bottom: 30px;
+}
+
+.advantage-list {
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.advantage-list h3 {
+font-size: 17px;
+margin-bottom: 3px;
+}
+
+.advantage-list p {
+font-size: 14px;
+color: #707870;
+}
+
+.booking-info {
+padding: 90px 8%;
+background: #fff;
+}
+
+.steps {
+display: flex;
+gap: 30px;
+margin-bottom: 45px;
+}
+
+.step {
+flex: 1;
+padding: 30px;
+background: #f8f6ef;
+border-radius: 10px;
+}
+
+.step span {
+font-size: 14px;
+color: #66816b;
+font-weight: bold;
+}
+
+.step h3 {
+margin: 20px 0 10px;
+}
+
+.step p {
+color: #6d746e;
+font-size: 14px;
+}
+
+.center-button {
+text-align: center;
+}
+
+/* ===================== PAGE HEADER ===================== */
+
+.page-header {
+text-align: center;
+padding: 80px 20px;
+}
+
+.page-header h1 {
+font-size: 52px;
+line-height: 1.1;
+margin-bottom: 20px;
+}
+
+.page-header>p:last-child,.page-header>span {
+display: block;
+max-width: 600px;
+margin: auto;
+color: #687069;
+}
+
+/* ===================== TENTANG ===================== */
+
+.about {
+padding: 40px 8% 100px;
+display: flex;
+align-items: center;
+gap: 80px;
+}
+
+.about-image {
+width: 50%;
+height: 480px;
+}
+
+.about-image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 15px;
+}
+
+.about-text {
+width: 50%;
+}
+
+.about-text h2 {
+font-size: 40px;
+line-height: 1.2;
+margin-bottom: 25px;
+}
+
+.about-text p:not(.small-title) {
+color: #6d746e;
+margin-bottom: 18px;
+}
+
+.vision {
+padding: 80px 8%;
+background: #fff;
+display: flex;
+gap: 80px;
+}
+
+.vision-box {
+width: 50%;
+}
+
+.vision-box h2 {
+font-size: 30px;
+line-height: 1.3;
+}
+
+.vision-box>p:last-child {
+color: #6d746e;
+max-width: 500px;
+}
+
+.values {
+padding: 90px 8%;
+}
+
+.value-container {
+display: flex;
+gap: 25px;
+}
+
+.value-card {
+flex: 1;
+padding: 35px;
+background: #fff;
+border: 1px solid #e1e4de;
+border-radius: 10px;
+}
+
+.value-card span {
+color: #78917b;
+font-weight: bold;
+}
+
+.value-card h3 {
+font-size: 22px;
+margin: 25px 0 10px;
+}
+
+.value-card p {
+color: #6d746e;
+}
+
+.cta {
+text-align: center;
+padding: 90px 20px;
+background: #e9eee6;
+}
+
+.cta h2 {
+font-size: 35px;
+margin-bottom: 10px;
+}
+
+.cta p {
+color: #6d746e;
+margin-bottom: 25px;
+}
+
+/* ===================== LAYANAN ===================== */
+
+.services-page {
+padding: 20px 8% 90px;
+}
+
+.services-page .service-card {
+display: flex;
+padding: 0;
+margin-bottom: 30px;
+background: #fff;
+overflow: hidden;
+min-height: 360px;
+}
+
+.services-page .service-image {
+width: 42%;
+min-height: 360px;
+}
+
+.services-page .service-image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.services-page .service-content {
+width: 58%;
+padding: 40px;
+}
+
+.services-page .service-content .service-number {
+margin-bottom: 10px;
+}
+
+.services-page .service-content h2 {
+font-size: 30px;
+margin-bottom: 15px;
+}
+
+.services-page .service-content>p:not(.service-number) {
+color: #6d746e;
+margin-bottom: 20px;
+}
+
+.services-page .service-content ul {
+padding-left: 20px;
+color: #566158;
+margin-bottom: 25px;
+}
+
+.services-page .service-content li {
+margin-bottom: 6px;
+}
+
+.service-bottom {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 20px;
+}
+
+.service-bottom h3 {
+color: #294832;
+font-size: 22px;
+}
+
+.service-bottom h3 span {
+font-size: 14px;
+font-weight: normal;
+color: #6d746e;
+}
+
+.service-bottom a {
+font-weight: bold;
+color: #294832;
+white-space: nowrap;
+}
+
+.info {
+padding: 80px 8%;
+background: #fff;
+display: flex;
+gap: 80px;
+align-items: center;
+}
+
+.info>div {
+width: 50%;
+}
+
+.info h2 {
+font-size: 34px;
+line-height: 1.25;
+}
+
+.info>div:last-child>p {
+color: #6d746e;
+margin-bottom: 25px;
+}
+
+/* ===================== KONTAK ===================== */
+
+.contact-section {
+width: 84%;
+max-width: 1200px;
+margin: 0 auto;
+padding: 30px 0 100px;
+display: flex;
+gap: 70px;
+}
+
+.contact-info,.contact-form {
+flex: 1;
+}
+
+.contact-info h2,.contact-form h2,.location h2 {
+font-size: 34px;
+margin-bottom: 15px;
+}
+
+.contact-info .description {
+color: #6d746e;
+margin-bottom: 30px;
+}
+
+.info-item {
+display: flex;
+align-items: center;
+gap: 15px;
+margin-bottom: 22px;
+}
+
+.info-icon {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+background: #e9eee6;
+color: #294832;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: bold;
+}
+
+.info-item h3 {
+font-size: 17px;
+}
+
+.info-item p {
+color: #6d746e;
+font-size: 14px;
+}
+
+.contact-form {
+background: #fff;
+padding: 35px;
+border-radius: 14px;
+}
+
+.contact-form form {
+display: flex;
+flex-direction: column;
+}
+
+.contact-form label {
+font-weight: bold;
+margin: 12px 0 7px;
+}
+
+.contact-form input,.contact-form textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #d7ddd6;
+border-radius: 7px;
+outline: none;
+}
+
+.contact-form input:focus,.contact-form textarea:focus {
+border-color: #294832;
+}
+
+.contact-form textarea {
+min-height: 130px;
+resize: vertical;
+}
+
+.contact-form button {
+border: 0;
+background: #294832;
+color: #fff;
+padding: 13px 22px;
+border-radius: 7px;
+cursor: pointer;
+margin-top: 18px;
+}
+
+.location {
+width: 84%;
+max-width: 1200px;
+margin: 0 auto 100px;
+display: flex;
+gap: 70px;
+align-items: center;
+}
+
+.location>div {
+flex: 1;
+}
+
+.location>div:first-child>p:last-child {
+color: #6d746e;
+}
+
+.map-box {
+min-height: 220px;
+border-radius: 14px;
+background: #e9eee6;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+color: #294832;
+}
+
+.map-box span {
+font-size: 20px;
+font-weight: bold;
+}
+
+/* ===================== BOOKING ===================== */
+
+.booking-page {
+min-height: calc(100vh - 90px);
+padding: 70px 8%;
+}
+
+.booking-box {
+max-width: 700px;
+margin: 0 auto;
+background: #fff;
+padding: 40px;
+border-radius: 14px;
+}
+
+.booking-box h1 {
+color: #294832;
+margin-bottom: 10px;
+}
+
+.booking-box>p {
+color: #6d746e;
+margin-bottom: 30px;
+}
+
+.form-group {
+margin-bottom: 18px;
+}
+
+.booking-box label {
+display: block;
+margin-bottom: 7px;
+font-weight: bold;
+}
+
+.booking-box input,.booking-box select,.booking-box textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #d7ddd6;
+border-radius: 7px;
+font-size: 15px;
+outline: none;
+}
+
+.booking-box input:focus,.booking-box select:focus,.booking-box textarea:focus {
+border-color: #294832;
+}
+
+.booking-box textarea {
+min-height: 110px;
+resize: vertical;
+}
+
+.booking-box button {
+border: 0;
+background: #294832;
+color: #fff;
+padding: 13px 22px;
+border-radius: 7px;
+cursor: pointer;
+}
+
+/* ===================== LOGIN & REGISTER ===================== */
+
+.login-container,.register-container {
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 30px 16px;
+background: #f8f6ef;
+}
+
+.login-box,.register-box {
+width: min(100%,450px);
+background: #fff;
+padding: 40px;
+border-radius: 15px;
+box-shadow: 0 10px 30px rgba(41,72,50,.08);
+}
+
+.login-box .logo,.register-box .logo {
+justify-content: center;
+font-size: 30px;
+margin-bottom: 25px;
+}
+
+.login-box h1,.register-box h1 {
+text-align: center;
+margin-bottom: 10px;
+}
+
+.login-box .deskripsi,.register-box .deskripsi {
+text-align: center;
+color: #777;
+margin-bottom: 25px;
+}
+
+.login-box form,.register-box form {
+display: flex;
+flex-direction: column;
+}
+
+.login-box label,.register-box label {
+display: block;
+margin-bottom: 7px;
+font-weight: bold;
+}
+
+.login-box input,.register-box input[type=text],.register-box input[type=email],.register-box input[type=password] {
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 8px;
+font-size: 15px;
+outline: none;
+margin-bottom: 17px;
+}
+
+.login-box input:focus,.register-box input:focus {
+border-color: #294832;
+}
+
+.btn-login,.btn-register {
+width: 100%;
+padding: 13px;
+border: 0;
+border-radius: 8px;
+background: #294832;
+color: #fff;
+font-size: 16px;
+cursor: pointer;
+margin-top: 5px;
+}
+
+.btn-login:hover,.btn-register:hover {
+background: #1e3625;
+}
+
+.register,.login {
+text-align: center;
+margin-top: 25px;
+color: #777;
+}
+
+.register a,.login a {
+color: #294832;
+font-weight: bold;
+}
+
+.login-box .home,.register-box .home {
+display: block;
+text-align: center;
+margin-top: 20px;
+color: #294832;
+}
+
+.gender {
+display: flex;
+gap: 25px;
+margin-top: 8px;
+margin-bottom: 17px;
+flex-wrap: wrap;
+}
+
+.gender label {
+font-weight: normal;
+display: flex;
+align-items: center;
+gap: 5px;
+margin: 0;
+}
+
+.gender input {
+margin: 0;
+}
+
+/* ===================== FOOTER ===================== */
+
+footer {
+background: #294832;
+color: #fff;
+padding: 60px 8% 20px;
+}
+
+.footer-content {
+display: flex;
+justify-content: space-between;
+gap: 50px;
+margin-bottom: 50px;
+}
+
+.footer-content>div {
+max-width: 280px;
+}
+
+.footer-content h2 {
+margin-bottom: 15px;
+}
+
+.footer-content h3 {
+margin-bottom: 15px;
+}
+
+.footer-content p,.footer-content a {
+color: #d5ddd5;
+font-size: 14px;
+margin-bottom: 5px;
+}
+
+.footer-content a {
+display: block;
+}
+
+.copyright {
+border-top: 1px solid #506956;
+padding-top: 20px;
+color: #c8d1c9;
+font-size: 13px;
+}
+
+/* ===================== RESPONSIVE ===================== */
+
+@media(max-width:1024px){
+
+    .navbar {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.hero,.advantages,.about,.vision,.info {
+gap: 40px;
+}
+
+.hero h1 {
+font-size: clamp(42px,6vw,55px);
+}
+
+.hero-image {
+height: 380px;
+}
+
+.advantage-image {
+height: 420px;
+}
+
+.services-page {
+padding-left: 5%;
+padding-right: 5%;
+}
+
+}
+
+@media(max-width:768px){
+
+    .navbar {
+    min-height: 76px;
+    padding: 16px 5%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px 20px;
+}
+
+.logo {
+font-size: 28px;
+}
+
+.logo img {
+width: 54px;
+height: 54px;
+}
+
+.menu {
+width: 100%;
+flex-wrap: wrap;
+gap: 10px 20px;
+}
+
+.menu a {
+font-size: 14px;
+}
+
+.navbar>.btn-login-nav,.navbar>.btn-booking {
+padding: 10px 18px;
+font-size: 14px;
+}
+
+.hero {
+min-height: auto;
+padding: 55px 5%;
+flex-direction: column;
+align-items: stretch;
+}
+
+.hero-text,.hero-image,.advantage-image,.advantage-text,.about-image,.about-text,.info>div,.vision-box {
+width: 100%;
+}
+
+.hero h1 {
+font-size: clamp(36px,9vw,48px);
+}
+
+.hero-image {
+height: 320px;
+}
+
+.hero-button {
+flex-wrap: wrap;
+}
+
+.services,.booking-info,.values {
+padding-left: 5%;
+padding-right: 5%;
+}
+
+.service-container,.steps,.value-container,.footer-content {
+flex-direction: column;
+}
+
+.advantages,.about,.vision,.info {
+flex-direction: column;
+padding-left: 5%;
+padding-right: 5%;
+}
+
+.advantage-image {
+height: 340px;
+}
+
+.page-header {
+padding: 55px 5% 45px;
+}
+
+.page-header h1 {
+font-size: clamp(34px,8vw,48px);
+}
+
+.services-page .service-card {
+flex-direction: column;
+}
+
+.services-page .service-image,.services-page .service-content {
+width: 100%;
+}
+
+.services-page .service-image {
+height: 280px;
+min-height: 280px;
+}
+
+.contact-section,.location {
+width: 90%;
+flex-direction: column;
+gap: 40px;
+}
+
+.contact-form {
+width: 100%;
+}
+
+.location {
+align-items: stretch;
+}
+
+footer {
+padding-left: 5%;
+padding-right: 5%;
+}
+
+}
+
+@media(max-width:480px){
+
+    .navbar {
+    padding: 12px 16px;
+}
+
+.logo {
+font-size: 24px;
+gap: 8px;
+}
+
+.logo img {
+width: 46px;
+height: 46px;
+}
+
+.menu {
+gap: 8px 14px;
+}
+
+.menu a {
+font-size: 13px;
+}
+
+.navbar>.btn-login-nav,.navbar>.btn-booking {
+padding: 9px 14px;
+font-size: 13px;
+}
+
+.hero {
+padding-top: 40px;
+}
+
+.hero h1 {
+font-size: 34px;
+}
+
+.hero-image {
+height: 250px;
+}
+
+.hero-button a {
+width: 100%;
+text-align: center;
+}
+
+.section-title h2,.advantage-text h2 {
+font-size: 30px;
+}
+
+.advantage-image {
+height: 280px;
+}
+
+.service-content {
+padding: 24px;
+}
+
+.page-header h1 {
+font-size: 32px;
+}
+
+.page-header {
+padding: 40px 16px;
+}
+
+.service-bottom {
+align-items: flex-start;
+gap: 15px;
+flex-direction: column;
+}
+
+.contact-section,.location {
+width: calc(100% - 32px);
+}
+
+.contact-form {
+padding: 24px 18px;
+}
+
+.booking-page {
+padding: 30px 16px;
+}
+
+.booking-box {
+padding: 24px 18px;
+border-radius: 12px;
+}
+
+.booking-box h1 {
+font-size: 28px;
+}
+
+.booking-box input,.booking-box select,.booking-box textarea {
+font-size: 16px;
+}
+
+.booking-box button {
+width: 100%;
+}
+
+.login-container,.register-container {
+padding: 20px 14px;
+}
+
+.login-box,.register-box {
+padding: 28px 22px;
+border-radius: 14px;
+}
+
+.login-box .logo,.register-box .logo {
+font-size: 26px;
+}
+
+.login-box h1,.register-box h1 {
+font-size: 30px;
+}
+
+.login-box .deskripsi,.register-box .deskripsi {
+font-size: 14px;
+}
+
+.login-box input,.register-box input[type=text],.register-box input[type=email],.register-box input[type=password] {
+font-size: 16px;
+}
+
+.gender {
+gap: 12px;
+}
+
+.cta {
+padding: 70px 16px;
+}
+
+.cta h2 {
+font-size: 30px;
+}
+
+.footer-content {
+gap: 30px;
+}
+
+.copyright {
+font-size: 12px;
+}
+
+}
+
+@media(max-width:360px){
+
+    .login-box,.register-box {
+    padding: 24px 16px;
+}
+
+.login-box h1,.register-box h1 {
+font-size: 27px;
+}
+
+.gender {
+flex-direction: column;
+gap: 8px;
+}
+
+}
